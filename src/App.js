@@ -8,7 +8,8 @@ class App extends  Component{
   constructor(props){
     super(props);
     this.state = {
-      user: ""
+      user: "",
+      age:21
     }
   }
 
@@ -34,6 +35,7 @@ class App extends  Component{
   render(){
     return(
       <div>
+       <p>My age:{this.state.age}</P>
         <input type="text" value={this.state.user} onChange={this.getUser.bind(this)} />
         <button onClick={this.setData.bind(this)}>Submit</button>
       </div>
