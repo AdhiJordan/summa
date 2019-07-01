@@ -9,7 +9,7 @@ class App extends  Component{
     super(props);
     this.state = {
       user: "",
-      age:21
+      age:25
     }
   }
 
@@ -35,7 +35,7 @@ class App extends  Component{
   render(){
     return(
       <div>
-       <p>My age:{this.state.age}</P>
+       <p>My age:{this.state.age}</p>
         <input type="text" value={this.state.user} onChange={this.getUser.bind(this)} />
         <button onClick={this.setData.bind(this)}>Submit</button>
       </div>
